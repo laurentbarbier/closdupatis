@@ -1,6 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ChevronDown } from 'lucide-react';
-import houseImage from 'figma:asset/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
+import houseImage from '../../assets/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
 
 export function Hero() {
   const scrollToFeatures = () => {
