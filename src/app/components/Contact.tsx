@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -8,12 +8,73 @@ export function Contact() {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const RECAPTCHA_SITE_KEY = (import.meta.env.VITE_RECAPTCHA_SITE_KEY as string) || '';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Dynamically load reCAPTCHA script when a site key is provided
+  const loadRecaptchaScript = (siteKey: string) => {
+    return new Promise<void>((resolve, reject) => {
+      if (!siteKey) return resolve();
+      const existing = document.querySelector(`script[src*="recaptcha"]`);
+      if (existing) return resolve();
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error('Failed to load reCAPTCHA script'));
+      document.head.appendChild(script);
+    });
+  };
+
+  useEffect(() => {
+    if (RECAPTCHA_SITE_KEY) loadRecaptchaScript(RECAPTCHA_SITE_KEY).catch(() => {});
+  }, [RECAPTCHA_SITE_KEY]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulation d'envoi de formulaire
-    alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+    try {
+      let payload: Record<string, any> = { ...formData };
+
+      // Get reCAPTCHA token if site key is configured
+      if (RECAPTCHA_SITE_KEY && (window as any).grecaptcha) {
+        try {
+          const token: string = await new Promise((resolve, reject) => {
+            (window as any).grecaptcha.ready(() => {
+              (window as any).grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact' })
+                .then((tk: string) => resolve(tk))
+                .catch(reject);
+            });
+          });
+          if (token) payload['g-recaptcha-response'] = token;
+        } catch (err) {
+          console.error('reCAPTCHA error:', err);
+          // Continue anyway, let Formspree handle it
+        }
+      }
+
+      const res = await fetch('https://formspree.io/f/xlggryjn', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      const responseText = await res.text();
+      console.log('Formspree response status:', res.status);
+      console.log('Formspree response:', responseText);
+
+      if (!res.ok) {
+        throw new Error(`Formspree error (${res.status}): ${responseText}`);
+      }
+      alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (err) {
+      console.error(err);
+      alert('Une erreur est survenue lors de l\'envoi, veuillez réessayer plus tard.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -67,7 +128,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-600">Email</p>
-                  <p>contact@closdulois.fr</p>
+                  <p>contact@closdupatis.fr</p>
                 </div>
               </div>
             </div>
@@ -150,9 +211,10 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-emerald-700 text-white px-6 py-3 rounded-lg hover:bg-emerald-800 transition-colors"
+                disabled={isSubmitting}
+                className="w-full bg-emerald-700 text-white px-6 py-3 rounded-lg hover:bg-emerald-800 transition-colors disabled:opacity-50"
               >
-                Envoyer le message
+                {isSubmitting ? 'Envoi...' : 'Envoyer le message'}
               </button>
             </form>
           </div>
