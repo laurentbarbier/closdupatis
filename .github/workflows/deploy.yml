@@ -27,6 +27,9 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          # Ensure the reCAPTCHA site key is available at build time
+          VITE_RECAPTCHA_SITE_KEY: ${{ secrets.VITE_RECAPTCHA_SITE_KEY }}
 
       - name: Deploy to GitHub Pages (push to gh-pages branch)
         uses: peaceiris/actions-gh-pages@v3
