@@ -106,9 +106,8 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-600">Adresse</p>
-                  <p>Clos du Pâtis</p>
-                  <p>123 Chemin des Vignes</p>
-                  <p>12345 Campagne-sur-Mer</p>
+                  <p>Le Pâtis</p>
+                  <p>72130 Saint Léonard des bois</p>
                 </div>
               </div>
 
@@ -128,7 +127,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-600">Email</p>
-                  <p>contact@closdupatis.fr</p>
+                  <p>contact@patis.fr</p>
                 </div>
               </div>
             </div>
