@@ -1,15 +1,18 @@
-import { Bed, Bath, Square, Car, Wifi, Utensils, ShowerHead, Trees, Laptop } from 'lucide-react';
+import { Bed, Bath, Square, Car, Wifi, Utensils, ShowerHead, Trees, Laptop, Tv, Flame } from 'lucide-react';
 
 const amenities = [
   { icon: Bed, label: '3 chambres spacieuses' },
+  { icon: Bed, label: '6 couchages dans 3 lits doubles' },
   { icon: Bath, label: '1 salle de bain' },
   { icon: ShowerHead, label: '1 chambre avec douche privée' },
   { icon: Square, label: '130 m² habitables' },
   { icon: Trees, label: '1 hectare de terrain' },
   { icon: Laptop, label: 'Espace télétravail dédié' },
+  { icon: Tv, label: 'Espace Télévision'},
   { icon: Car, label: 'Garage et parking' },
   { icon: Wifi, label: 'WiFi haut débit' },
-  { icon: Utensils, label: 'Cuisine équipée' }
+  { icon: Utensils, label: 'Cuisine équipée' },
+  { icon: Flame, label: 'Authentique poêle' }
 ];
 
 export function Amenities() {
