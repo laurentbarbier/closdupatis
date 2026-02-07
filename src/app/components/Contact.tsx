@@ -10,6 +10,7 @@ export function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const RECAPTCHA_SITE_KEY = (import.meta.env.VITE_RECAPTCHA_SITE_KEY as string) || '';
+  const FORMSPREE_ID = (import.meta.env.VITE_FORMSPREE_ID as string) || '';
 
   // Dynamically load reCAPTCHA script when a site key is provided
   const loadRecaptchaScript = (siteKey: string) => {
@@ -54,7 +55,9 @@ export function Contact() {
         }
       }
 
-      const res = await fetch('https://formspree.io/f/xlggryjn', {
+      console.log('Sending form with payload:', payload);
+
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -70,7 +73,7 @@ export function Contact() {
       alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (err) {
-      console.error(err);
+      console.error('Error:', err);
       alert('Une erreur est survenue lors de l\'envoi, veuillez réessayer plus tard.');
     } finally {
       setIsSubmitting(false);
