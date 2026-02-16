@@ -3,6 +3,5 @@ dist
 .vscode
 .DS_Store
 .env
-.env.local
 docs
 .github/agents
