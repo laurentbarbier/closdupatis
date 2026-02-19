@@ -93,7 +93,7 @@ export function Contact() {
         <div className="text-center mb-16">
           <h2 className="mb-4">Nous Contacter</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Intéressé par le Clos du Pâtis ? N'hésitez pas à nous contacter pour plus d'informations
+            Intéressé par le Patis ? N'hésitez pas à nous contacter pour plus d'informations ou une réservation
           </p>
         </div>
 

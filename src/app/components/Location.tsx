@@ -7,7 +7,7 @@ export function Location() {
         <div className="text-center mb-16">
           <h2 className="mb-4">Localisation</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Le Clos du Pâtis est idéalement situé à Saint-Léonard-des-Bois, au cœur des Alpes Mancelles
+            Le Patis est idéalement situé à Saint-Léonard-des-Bois, au cœur des Alpes Mancelles
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Carte du Clos du Pâtis"
+              title="Carte du Patis"
             ></iframe>
           </div>
 
@@ -36,7 +36,7 @@ export function Location() {
                 <div>
                   <h3 className="text-xl mb-2">Adresse</h3>
                   <p className="text-gray-600">
-                    La Ribotière<br />
+                    Le Patis<br />
                     72130 Saint-Léonard-des-Bois<br />
                     Sarthe, France
                   </p>
@@ -52,10 +52,12 @@ export function Location() {
                 <div>
                   <h3 className="text-xl mb-2">Accès</h3>
                   <ul className="text-gray-600 space-y-1">
-                    <li>• Le Mans : 45 min (45 km)</li>
-                    <li>• Alençon : 25 min (22 km)</li>
-                    <li>• Fresnay-sur-Sarthe : 10 min (8 km)</li>
-                    <li>• Paris : 2h30 (220 km)</li>
+                    <li>• Alençon : 20 km • 25 min</li>
+                    <li>• Le Mans : 50 km • 50 min</li>
+                    <li>• Caen : 100 km • 1h20</li>
+                    <li>• Mont-Saint-Michel : 120 km • 1h45</li>
+                    <li>• St Léonard-des-Bois : 4 km • 10 min</li>
+                    <li>• St Céneri-le-Gérei : 5 km • 10 min</li>
                   </ul>
                 </div>
               </div>
@@ -66,27 +68,27 @@ export function Location() {
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Parking gratuit sur place</span>
+                  <span>2 garages gratuits sur place</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Boulangerie : 3 km</span>
+                  <span>St Léonard-des-Bois : 4 km (restaurants, épicerie)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Supérette : 5 min (Saint-Léonard-des-Bois)</span>
+                  <span>St Pierre-des-Nids : 4 km (boulangeries, supermarché)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Supermarché : 8 km (Fresnay-sur-Sarthe)</span>
+                  <span>St Céneri-le-Gérei : 5 km (plus beau village de France)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Gare la plus proche : Le Mans (45 km)</span>
+                  <span>Lac Sillé-le-Guillaume : 25 km (plage)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-                  <span>Aéroport : Nantes (150 km)</span>
+                  <span>Domaine du Gasseau : activités et accrobranches</span>
                 </li>
               </ul>
             </div>

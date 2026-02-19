@@ -10,7 +10,7 @@ export function ArrivalGuide() {
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-2">Bienvenue au Clos du Pâtis</h1>
+          <h1 className="text-4xl font-bold mb-2">Bienvenue au Patis</h1>
           <p className="text-emerald-100">Guide d'arrivée et d'installation</p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export function ArrivalGuide() {
             <AccordionContent className="px-4 pt-4">
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Au Clos du Pâtis</h4>
+                  <h4 className="font-semibold text-slate-900 mb-2">Au Patis</h4>
                   <p className="text-slate-700 mb-3">
                     Les draps, serviettes et housses de couette sont fournis et changés régulièrement. Vous les trouverez :
                   </p>

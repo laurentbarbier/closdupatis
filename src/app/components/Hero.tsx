@@ -12,16 +12,19 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src={houseImage}
-          alt="Clos du Pâtis"
+          alt="Le Patis"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="mb-6">Clos du Pâtis</h1>
+        <h1 className="mb-6">Le Patis</h1>
+        <p className="mb-4 max-w-2xl mx-auto text-xl md:text-2xl font-semibold opacity-95">
+          Gîte 6 à 8 personnes au cœur des Alpes Mancelles
+        </p>
         <p className="mb-8 max-w-2xl mx-auto text-lg md:text-xl opacity-95">
-          Une maison de charme nichée au cœur de la campagne, où le temps s'arrête pour savourer les plaisirs simples de la vie
+          En pleine campagne, situé au bout d'une impasse... Calme assuré !
         </p>
         <button
           onClick={scrollToFeatures}

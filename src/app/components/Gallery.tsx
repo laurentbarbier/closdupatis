@@ -8,22 +8,22 @@ import bedroomViewImage from '../../assets/4f697b73462cc3b8206a1c5b887f78bba913e
 const images = [
   {
     src: houseImage,
-    alt: 'Clos du Pâtis - Façade principale',
+    alt: 'Le Patis - Façade principale',
     isLocal: true
   },
   {
     src: houseDistantImage,
-    alt: 'Clos du Pâtis - Vue du jardin',
+    alt: 'Le Patis - Vue du jardin',
     isLocal: true
   },
   {
     src: lawnViewImage,
-    alt: 'Clos du Pâtis - Vue sur la pelouse',
+    alt: 'Le Patis - Vue sur la pelouse',
     isLocal: true
   },
   {
     src: bedroomViewImage,
-    alt: 'Clos du Pâtis - Vue depuis une chambre',
+    alt: 'Le Patis - Vue depuis une chambre',
     isLocal: true
   },
   {
@@ -63,7 +63,7 @@ export function Gallery() {
           <div className="text-center mb-16">
             <h2 className="mb-4">Galerie Photos</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Parcourez notre galerie et laissez-vous séduire par le charme du Clos du Pâtis
+              Découvrez l'authenticité et le charme du Patis à travers ces images
             </p>
           </div>
           

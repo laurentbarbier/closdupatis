@@ -3,23 +3,23 @@ import { Home, TreePine, Users, Sparkles } from 'lucide-react';
 const features = [
   {
     icon: Home,
-    title: 'Authenticité Préservée',
-    description: 'Une bâtisse traditionnelle restaurée avec soin, alliant charme d\'antan et confort moderne.'
+    title: 'Ancienne Fermette Rénovée',
+    description: 'Une bâtisse traditionnelle entièrement rénovée alliant charme authentique et confort moderne, restaurée avec soin.'
   },
   {
     icon: TreePine,
-    title: 'Nature Environnante',
-    description: 'Un cadre verdoyant exceptionnel avec jardin arboré, parfait pour se ressourcer et se reconnecter à la nature.'
-  },
-  {
-    icon: Users,
-    title: 'Espaces Généreux',
-    description: 'Des pièces spacieuses et lumineuses, idéales pour accueillir famille et amis dans un confort absolu.'
+    title: 'Parc Arboré d\'un Hectare',
+    description: 'Un environnement verdoyant exceptionnel, terrasse couverte de 30 m² et salon de jardin pour profiter de la nature.'
   },
   {
     icon: Sparkles,
-    title: 'Tranquillité Absolue',
-    description: 'Loin de l\'agitation urbaine, profitez d\'un havre de paix où le calme et la sérénité règnent.'
+    title: 'Calme Assuré',
+    description: 'Situé au bout d\'une impasse, loin de l\'agitation urbaine, un havre de paix et de sérénité garanti.'
+  },
+  {
+    icon: Users,
+    title: 'Idéal pour Familles & Groupes',
+    description: 'Capacité 6 à 8 personnes avec espaces généreux et confortables, parfait pour réunir famille et amis.'
   }
 ];
 
@@ -28,9 +28,9 @@ export function Features() {
     <section id="features" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Les Atouts de la Maison</h2>
+          <h2 className="mb-4">Les Atouts du Patis</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Découvrez ce qui fait du Clos du Loïs un lieu unique et exceptionnel
+            Découvrez ce qui fait du Patis un lieu unique et exceptionnel aux Alpes Mancelles
           </p>
         </div>
         
