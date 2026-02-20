@@ -19,6 +19,9 @@ export function Hero() {
       </div>
       
       <div className="relative z-10 text-center text-white px-4">
+        <div className="mb-6 inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full border border-white/30">
+          <p className="text-sm md:text-base font-semibold">🌿 Grand ouverture : 1ier mai 2026</p>
+        </div>
         <h1 className="mb-6">Le Patis</h1>
         <p className="mb-4 max-w-2xl mx-auto text-xl md:text-2xl font-semibold opacity-95">
           Gîte 6 à 8 personnes au cœur des Alpes Mancelles
