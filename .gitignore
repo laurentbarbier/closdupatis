@@ -4,4 +4,4 @@ dist
 .DS_Store
 .env
 docs
-.github/agents
+.github/agents/working-backward-coach.md
