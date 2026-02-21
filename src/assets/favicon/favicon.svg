@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Dark navy background with rounded corners -->
-  <rect width="100" height="100" rx="15" fill="#030213"/>
+  <!-- Red background with rounded corners -->
+  <rect width="100" height="100" rx="15" fill="#A82323"/>
   <!-- House silhouette in white (pentagon: roof + walls) -->
   <path d="M50 13 L84 47 L84 87 L16 87 L16 47 Z" fill="#ffffff"/>
-  <!-- Left window (navy cut-out) -->
-  <rect x="23" y="53" width="16" height="13" rx="2" fill="#030213"/>
-  <!-- Right window (navy cut-out) -->
-  <rect x="61" y="53" width="16" height="13" rx="2" fill="#030213"/>
-  <!-- Door (navy cut-out, centered) -->
-  <rect x="42" y="67" width="16" height="20" rx="2" fill="#030213"/>
+  <!-- Left window (cut-out) -->
+  <rect x="23" y="53" width="16" height="13" rx="2" fill="#A82323"/>
+  <!-- Right window (cut-out) -->
+  <rect x="61" y="53" width="16" height="13" rx="2" fill="#A82323"/>
+  <!-- Door (cut-out, centered) -->
+  <rect x="42" y="67" width="16" height="20" rx="2" fill="#A82323"/>
 </svg>
