@@ -15,7 +15,7 @@ export function Location() {
           {/* Map */}
           <div className="rounded-xl overflow-hidden shadow-lg h-[400px]">
             <iframe
-              src="https://maps.google.com/maps?q=48.3720659,-0.0894036&z=16&output=embed"
+              src="https://maps.google.com/maps?q=48.36910671745155,-0.08989035055104481&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
