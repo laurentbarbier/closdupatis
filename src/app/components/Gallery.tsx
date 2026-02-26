@@ -12,21 +12,20 @@ import chambre1_2 from '../../assets/chambre_1_2.jpeg';
 import chambre2_1 from '../../assets/chambre_2_1.jpeg';
 import chambre2_2 from '../../assets/chambre_2_2.jpeg';
 import chambreDouche1 from '../../assets/chambre_douche_1.jpeg';
-import chambreDouche2 from '../../assets/chambre_douche_2.jpeg';
 import chambreDouche3 from '../../assets/chambre_douche_3.jpeg';
 import salle1 from '../../assets/salle_1.jpeg';
 import salle2 from '../../assets/salle_2.jpeg';
-import salle3 from '../../assets/salle_3.jpeg';
 import salle4 from '../../assets/salle_4.jpeg';
 import salle5 from '../../assets/salle_5.jpeg';
 import salleBain1 from '../../assets/salle_de_bain_1.jpeg';
 import salleBain2 from '../../assets/salle_de_bain_2.jpeg';
 import salleBain3 from '../../assets/salle_de_bain_3.jpeg';
+import cuisine1 from '../../assets/cusine_1.jpeg';
+import cuisine2 from '../../assets/cuisine_2.jpeg';
 import salon1 from '../../assets/salon_1.jpeg';
-import salon2 from '../../assets/salon_2.jpeg';
 import salon3 from '../../assets/salon_3.jpeg';
 
-type Category = 'exterieur' | 'salon' | 'bureau' | 'chambre1' | 'chambre2' | 'chambre-douche' | 'salle-bain' | 'all';
+type Category = 'exterieur' | 'salon' | 'cuisine' | 'bureau' | 'chambre1' | 'chambre2' | 'chambre-douche' | 'salle-bain' | 'all';
 
 interface GalleryImage {
   src: string;
@@ -76,12 +75,6 @@ const allImages: GalleryImage[] = [
     isLocal: true
   },
   {
-    src: salon2,
-    alt: 'Salon - Vue générale',
-    category: 'salon',
-    isLocal: true
-  },
-  {
     src: salon3,
     alt: 'Salon - Ambiance cosy',
     category: 'salon',
@@ -100,12 +93,6 @@ const allImages: GalleryImage[] = [
     isLocal: true
   },
   {
-    src: salle3,
-    alt: 'Salle - Ambiance',
-    category: 'salon',
-    isLocal: true
-  },
-  {
     src: salle4,
     alt: 'Salle - Détail décoration',
     category: 'salon',
@@ -115,6 +102,19 @@ const allImages: GalleryImage[] = [
     src: salle5,
     alt: 'Salle - Vue générale',
     category: 'salon',
+    isLocal: true
+  },
+  // Cuisine
+  {
+    src: cuisine1,
+    alt: 'Cuisine - Vue générale',
+    category: 'cuisine',
+    isLocal: true
+  },
+  {
+    src: cuisine2,
+    alt: 'Cuisine - Détail équipements',
+    category: 'cuisine',
     isLocal: true
   },
   // Chambre 1
@@ -151,14 +151,8 @@ const allImages: GalleryImage[] = [
     isLocal: true
   },
   {
-    src: chambreDouche2,
-    alt: 'Chambre avec Douche - Vue 2',
-    category: 'chambre-douche',
-    isLocal: true
-  },
-  {
     src: chambreDouche3,
-    alt: 'Chambre avec Douche - Vue 3',
+    alt: 'Chambre avec Douche - Vue 2',
     category: 'chambre-douche',
     isLocal: true
   },
@@ -177,7 +171,7 @@ const allImages: GalleryImage[] = [
   },
   {
     src: salleBain3,
-    alt: 'Salle de Bain - Détail',
+    alt: 'Salle de Bain - Douche',
     category: 'salle-bain',
     isLocal: true
   }
@@ -187,6 +181,7 @@ const categories: { value: Category; label: string }[] = [
   { value: 'all', label: 'Toutes les photos' },
   { value: 'exterieur', label: '🏞️ Extérieur' },
   { value: 'salon', label: '🍽️ Salon & Salle' },
+  { value: 'cuisine', label: '🍳 Cuisine' },
   { value: 'bureau', label: '🖥️ Bureau' },
   { value: 'chambre1', label: '🛏️ Chambre 1' },
   { value: 'chambre2', label: '🛏️ Chambre 2' },

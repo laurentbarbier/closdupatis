@@ -14,7 +14,7 @@ const features = [
   {
     icon: Sparkles,
     title: 'Calme Assuré',
-    description: 'Situé au bout d\'une impasse, loin de l\'agitation urbaine, un havre de paix et de sérénité garanti.'
+    description: 'Situé au bout d\'une impasse, loin de l\'agitation urbaine, un havre de paix et de sérénité garantis.'
   },
   {
     icon: Users,
