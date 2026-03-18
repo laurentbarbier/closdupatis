@@ -1,5 +1,7 @@
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { useState, useEffect } from 'react';
+
+const AIRBNB_URL = 'https://www.airbnb.fr/rooms/1625316181577908591';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -97,53 +99,23 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Coordonnées */}
-          <div>
-            <h3 className="mb-6">Coordonnées</h3>
-            
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700">
-                  <MapPin size={24} />
-                </div>
-                <div>
-                  <p className="text-gray-600">Adresse</p>
-                  <p>Le Pâtis</p>
-                  <p>72130 Saint Léonard des bois</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <p className="text-gray-600">Téléphone</p>
-                  <p>+33 1 23 45 67 89</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700">
-                  <Mail size={24} />
-                </div>
-                <div>
-                  <p className="text-gray-600">Email</p>
-                  <p>contact@patis.fr</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 p-6 bg-emerald-50 rounded-lg">
-              <h4 className="mb-2">Horaires d'accueil</h4>
-              <p className="text-gray-600">Du lundi au vendredi : 9h - 18h</p>
-              <p className="text-gray-600">Samedi : 10h - 16h</p>
-              <p className="text-gray-600">Dimanche : Sur rendez-vous</p>
-            </div>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+          <div className="rounded-2xl border border-[#FFD3DC] bg-[#FFF5F7] p-8">
+            <h3 className="mb-3 text-gray-900">Réserver en ligne</h3>
+            <p className="text-gray-600">
+              L'annonce est maintenant disponible sur Airbnb si vous souhaitez réserver directement en ligne.
+            </p>
+            <a
+              href={AIRBNB_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#FF385C] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#E31C5F]"
+            >
+              Voir l'annonce Airbnb
+              <ExternalLink size={18} />
+            </a>
           </div>
 
-          {/* Formulaire */}
           <div>
             <h3 className="mb-6">Envoyer un message</h3>
             

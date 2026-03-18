@@ -1,6 +1,8 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ExternalLink } from 'lucide-react';
 import houseImage from '../../assets/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
+
+const AIRBNB_URL = 'https://www.airbnb.fr/rooms/1625316181577908591';
 
 export function Hero() {
   const scrollToFeatures = () => {
@@ -29,13 +31,24 @@ export function Hero() {
         <p className="mb-8 max-w-2xl mx-auto text-lg md:text-xl opacity-95">
           En pleine campagne, situé au bout d'une impasse... Calme assuré !
         </p>
-        <button
-          onClick={scrollToFeatures}
-          className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
-        >
-          Découvrir
-          <ChevronDown size={20} />
-        </button>
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href={AIRBNB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#FF385C] px-8 py-3 font-semibold text-white shadow-lg shadow-black/20 transition-transform hover:-translate-y-0.5 hover:bg-[#E31C5F]"
+          >
+            Réserver sur Airbnb
+            <ExternalLink size={20} />
+          </a>
+          <button
+            onClick={scrollToFeatures}
+            className="inline-flex items-center gap-2 rounded-full bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors"
+          >
+            Découvrir
+            <ChevronDown size={20} />
+          </button>
+        </div>
       </div>
       
       <button
