@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600" role="img" aria-labelledby="title desc">
+  <title id="title">Carte de visite Le Patis - version nature contemporaine</title>
+  <desc id="desc">Carte de visite horizontale pour le gîte Le Patis, avec fond clair, lignes topographiques et accents verts.</desc>
+  <defs>
+    <clipPath id="rounded">
+      <rect width="1050" height="600" rx="46"/>
+    </clipPath>
+    <pattern id="contours" width="210" height="150" patternUnits="userSpaceOnUse">
+      <path d="M-30 105 C30 72 73 132 139 92 C192 59 235 82 250 36" fill="none" stroke="#9aa66f" stroke-width="2" opacity="0.28"/>
+      <path d="M-48 142 C19 101 69 169 145 124 C203 90 247 112 269 58" fill="none" stroke="#9aa66f" stroke-width="2" opacity="0.18"/>
+      <path d="M-20 54 C31 20 81 74 136 46 C181 23 223 36 252 4" fill="none" stroke="#9aa66f" stroke-width="2" opacity="0.14"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#182113" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="1050" height="600" fill="#f7f2e8"/>
+    <rect width="1050" height="600" fill="url(#contours)"/>
+    <path d="M665 0 H1050 V600 H566 C704 484 740 357 694 219 C670 147 660 73 665 0Z" fill="#2f5738"/>
+    <path d="M728 0 H1050 V600 H648 C763 473 792 348 750 217 C728 145 721 72 728 0Z" fill="#24462f" opacity="0.92"/>
+
+    <g transform="translate(105 92)" filter="url(#softShadow)">
+      <rect width="132" height="132" rx="28" fill="#a82323"/>
+      <path d="M66 24 L111 69 L111 113 L21 113 L21 69 Z" fill="#fff"/>
+      <rect x="31" y="76" width="21" height="17" rx="3" fill="#a82323"/>
+      <rect x="80" y="76" width="21" height="17" rx="3" fill="#a82323"/>
+      <rect x="55" y="94" width="22" height="19" rx="3" fill="#a82323"/>
+    </g>
+
+    <text x="105" y="298" fill="#1f2a1e" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700">Le Patis</text>
+    <text x="109" y="350" fill="#4e5f44" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Gîte 6 à 8 personnes</text>
+    <line x1="109" y1="390" x2="435" y2="390" stroke="#a82323" stroke-width="5" stroke-linecap="round"/>
+    <text x="109" y="444" fill="#1f2a1e" font-family="Inter, Arial, sans-serif" font-size="27">Au cœur des Alpes Mancelles</text>
+    <text x="109" y="486" fill="#586355" font-family="Inter, Arial, sans-serif" font-size="24">72130 Saint-Léonard-des-Bois · Sarthe</text>
+
+    <g transform="translate(724 248)">
+      <text x="0" y="0" fill="#f7f2e8" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">SITE OFFICIEL</text>
+      <text x="0" y="55" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">lepatis.fr</text>
+    </g>
+  </g>
+</svg>
