@@ -4,12 +4,12 @@ const featuredReviews = [
   {
     text: 'Super séjour, accueil charmant, convivial et attentionné !',
     author: 'Éloïse',
-    meta: 'il y a 1 jour · Quelques nuits',
+    meta: 'Mardi 26 mai 2026',
   },
   {
     text: 'Un petit coin de paradis pour ceux qui aiment la nature et le calme !! Nous remercions chaleureusement Claude et Marie-Renée pour leur accueil, leur gentillesse et leurs petites attentions pendant notre séjour dans leur magnifique logement.',
     author: 'Angéline',
-    meta: null,
+    meta: 'Dimanche 17 mai 2026',
   },
 ];
 
