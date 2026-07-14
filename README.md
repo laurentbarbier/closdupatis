@@ -44,6 +44,7 @@ src/
   styles/
 ```
 
-## Reservation
+## Liens
 
+Site : [lepatis.fr](https://lepatis.fr)
 Annonce Airbnb : [voir l'annonce](https://www.airbnb.fr/rooms/1625316181577908591)
