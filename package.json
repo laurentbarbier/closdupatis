@@ -58,7 +58,7 @@
     "react-popper": "2.3.0",
     "react-resizable-panels": "4.8.0",
     "react-responsive-masonry": "2.7.1",
-    "react-router-dom": "7.13.2",
+    "react-router-dom": "7.18.1",
     "react-slick": "0.31.0",
     "recharts": "3.8.1",
     "sonner": "2.0.7",
@@ -67,10 +67,10 @@
     "vaul": "1.1.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "4.2.2",
-    "@vitejs/plugin-react": "6.0.2",
-    "tailwindcss": "4.2.2",
-    "vite": "8.0.16"
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-react": "6.0.3",
+    "tailwindcss": "4.3.3",
+    "vite": "8.1.5"
   },
   "peerDependenciesMeta": {
     "react": {
