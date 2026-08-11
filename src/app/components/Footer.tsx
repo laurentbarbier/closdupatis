@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto text-center">
         <h3 className="mb-2">Le Patis</h3>
         <p className="text-gray-400 mb-4">
-          Gîte 6 à 8 personnes au cœur des Alpes Mancelles
+          Gîte spacieux au cœur des Alpes Mancelles
         </p>
         <div className="flex items-center justify-center gap-2 text-gray-400">
           <span>Créé avec</span>

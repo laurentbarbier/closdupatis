@@ -12,6 +12,7 @@ const amenities = [
   { icon: Sofa, label: 'Séjour 30 m² + Clic-Clac' },
   { icon: Tv, label: 'Salon avec canapé et TV' },
   { icon: Utensils, label: 'Cuisine équipée 9 m²' },
+  { icon: Utensils, label: 'Congélateur' },
   { icon: Wifi, label: 'WiFi haut débit' },
   { icon: Laptop, label: 'Bureau avec WiFi dédié' },
   { icon: Umbrella, label: 'Terrasse couverte 30 m²' },

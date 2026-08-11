@@ -23,10 +23,10 @@ export function Hero() {
       <div className="relative z-10 text-center text-white px-4">
         <h1 className="mb-6">Le Patis</h1>
         <p className="mb-4 max-w-2xl mx-auto text-xl md:text-2xl font-semibold opacity-95">
-          Gîte 6 à 8 personnes au cœur des Alpes Mancelles
+          Gîte spacieux au cœur des Alpes Mancelles
         </p>
         <p className="mb-8 max-w-2xl mx-auto text-lg md:text-xl opacity-95">
-          En pleine campagne, situé au bout d'une impasse... Calme assuré !
+          En pleine campagne, situé au bout d'une impasse : idéal aussi pour un séjour en couple, au calme.
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a

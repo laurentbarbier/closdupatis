@@ -18,8 +18,8 @@ const features = [
   },
   {
     icon: Users,
-    title: 'Idéal pour Familles & Groupes',
-    description: 'Capacité 6 à 8 personnes avec espaces généreux et confortables, parfait pour réunir famille et amis.'
+    title: 'Gîte Spacieux et Polyvalent',
+    description: 'Des espaces généreux et confortables, parfaits autant pour un séjour en couple au calme que pour des retrouvailles en famille.'
   }
 ];
 
