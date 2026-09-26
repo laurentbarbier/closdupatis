@@ -3,8 +3,10 @@
 Ce dossier centralise les consignes d'agents du projet dans un format neutre,
 utilisable par Copilot, Codex, Claude ou tout autre assistant IA.
 
-Les fichiers sources historiques sont dans `.github/agents/`. Les versions de
-ce dossier doivent etre considerees comme la source generique a maintenir.
+Les fichiers `.github/agents/*.agent.md` sont de simples pointeurs pour le
+selecteur d'agents de VS Code : ils renvoient vers les fichiers de ce dossier.
+Les versions de ce dossier (`.agents/`) sont la source generique a maintenir ;
+ne pas dupliquer leur contenu dans `.github/agents/`.
 
 ## Agents disponibles
 
