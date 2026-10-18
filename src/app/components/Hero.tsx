@@ -1,7 +1,7 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ChevronDown, ExternalLink } from 'lucide-react';
 import { SuperhostBadge } from './SuperhostBadge';
-import houseImage from '../../assets/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
+import houseImage from '../../assets/facade.jpeg';
 
 const AIRBNB_URL = 'https://www.airbnb.fr/rooms/1625316181577908591';
 
@@ -15,16 +15,17 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src={houseImage}
-          alt="Le Patis"
+          alt="Façade du gîte Le Patis à Saint-Léonard-des-Bois, dans les Alpes Mancelles"
           className="w-full h-full object-cover"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="mb-6">Le Patis</h1>
+        <h1 className="mb-4">Le Patis</h1>
         <p className="mb-4 max-w-2xl mx-auto text-xl md:text-2xl font-semibold opacity-95">
-          Gîte spacieux au cœur des Alpes Mancelles
+          Gîte spacieux à Saint-Léonard-des-Bois, au cœur des Alpes Mancelles
         </p>
         <p className="mb-8 max-w-2xl mx-auto text-lg md:text-xl opacity-95">
           En pleine campagne, situé au bout d'une impasse : idéal aussi pour un séjour en couple, au calme.

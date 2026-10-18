@@ -1,9 +1,9 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
-import houseImage from '../../assets/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
-import houseDistantImage from '../../assets/be773f37d336ea8f413110db55c8a19ed93fdd6e.png';
-import lawnViewImage from '../../assets/32a6dcac1ec4f8d708d560623d1a848f516fa7c4.png';
-import bedroomViewImage from '../../assets/4f697b73462cc3b8206a1c5b887f78bba913e7fb.png';
+import houseImage from '../../assets/facade.jpeg';
+import houseDistantImage from '../../assets/jardin.jpeg';
+import lawnViewImage from '../../assets/pelouse.jpeg';
+import bedroomViewImage from '../../assets/vue_chambre.jpeg';
 
 // Import des photos des pièces
 import bureau1 from '../../assets/bureau_1.jpeg';
