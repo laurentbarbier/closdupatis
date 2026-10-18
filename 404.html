@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <title>Le Patis</title>
-    <script type="text/javascript">
-      // GitHub Pages workaround for SPA routing
-      var pathSegmentsToKeep = 1; // Keep /closdupatis/
-
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + 
-        (l.port ? ':' + l.port : '') +
-        '/closdupatis/?' + 
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+    <script>
+      // Le site est servi à la racine de lepatis.fr : toute URL inconnue renvoie à l'accueil.
+      window.location.replace('/');
     </script>
   </head>
   <body>
+    <p><a href="/">Retour à l'accueil du Patis</a></p>
   </body>
 </html>
