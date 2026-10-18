@@ -1,4 +1,5 @@
 import { Heart } from 'lucide-react';
+import { SuperhostBadge } from './SuperhostBadge';
 
 export function Footer() {
   return (
@@ -8,6 +9,7 @@ export function Footer() {
         <p className="text-gray-400 mb-4">
           Gîte spacieux au cœur des Alpes Mancelles
         </p>
+        <SuperhostBadge variant="dark" className="mb-4" />
         <div className="flex items-center justify-center gap-2 text-gray-400">
           <span>Créé avec</span>
           <Heart size={16} className="text-red-500 fill-current" />

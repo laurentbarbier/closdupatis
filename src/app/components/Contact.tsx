@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { SuperhostBadge } from './SuperhostBadge';
 
 const AIRBNB_URL = 'https://www.airbnb.fr/rooms/1625316181577908591';
 
@@ -101,6 +102,7 @@ export function Contact() {
 
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
           <div className="rounded-2xl border border-[#FFD3DC] bg-[#FFF5F7] p-8">
+            <SuperhostBadge className="mb-4 !bg-white shadow-sm" />
             <h3 className="mb-3 text-gray-900">Réserver en ligne</h3>
             <p className="text-gray-600">
               L'annonce est maintenant disponible sur Airbnb si vous souhaitez réserver directement en ligne.

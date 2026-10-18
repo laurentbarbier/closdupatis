@@ -1,5 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ChevronDown, ExternalLink } from 'lucide-react';
+import { SuperhostBadge } from './SuperhostBadge';
 import houseImage from '../../assets/b72d0580f24e1b1ae3a81edc53413df639aa17da.png';
 
 const AIRBNB_URL = 'https://www.airbnb.fr/rooms/1625316181577908591';
@@ -28,6 +29,7 @@ export function Hero() {
         <p className="mb-8 max-w-2xl mx-auto text-lg md:text-xl opacity-95">
           En pleine campagne, situé au bout d'une impasse : idéal aussi pour un séjour en couple, au calme.
         </p>
+        <SuperhostBadge className="mb-8" />
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href={AIRBNB_URL}
